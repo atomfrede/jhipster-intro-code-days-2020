@@ -1,0 +1,440 @@
+:icons: font
+:twitter-tag: @atomfrede
+:conference-tag: #codedays2020
+:talk-tag: #jhipsterintro
+:revnumber: {project-version}
+:example-caption!:
+:source-highlighter: highlightjs
+:revealjs_width: "90%"
+:imagesdir: {docdir}/src/docs/asciidoc/images
+:sourcedir: {docdir}/src/main/java
+:customcss: css/custom.css
+:revealjs_history: true
+:revealjs_plugin_pdf: enabled
+:revealjs_theme: solarized
+:revealjs_controls: true
+:source-highlighter: highlightjs
+:highlightjs-theme: css/atom-one-light.css
+:iconfont-cdn: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+
+:linkattrs:
+
+= Getting Hip with JHipster
+
+image::jhipster-logo.png[scaledwidth=100%]
+
+Code Days 2020
+
+include::{includedir}/footer.adoc[]
+include::{includedir}/click-mouse-navigation.adoc[]
+
+
+== About me
+Frederik Hahne
+
+icon:twitter[] https://twitter.com/atomfrede[@atomfrede]
+
+icon:globe[] https://atomfrede.gitlab.io[atomfrede.gitlab.io]
+
+=== About me
+
+* JHipster Core Team Member since 2015
+* Gradle Stream Lead, Vue Maintainer
+* JUG Paderborn Organizer
+* Software Developer at wescale 
+
+image:wescale-logo.png[scaledwidth=50%, role=right]
+image:jug-pb.png[scaledwidth=50%]
+
+[.white.text]
+=== Disclaimer
+
+image::https://media.giphy.com/media/WyrdDeIxGOlQA/source.gif[canvas,size=contain]
+I am a Noob
+
+== Greeetings, Hipsters
+
+image:jhipster_family_member_0_head.png[]
+image:jhipster_family_member_2_head.png[]
+image:jhipster_family_member_1_head.png[]
+image:jhipster_family_member_3_head.png[]
+
+[NOTE.speaker]
+--
+It has been java hipsters, but we are more now, so stay tuned..
+--
+
+== Agenda
+
+* Introduction
+* Overview
+* Demo
+
+[%notitle]
+[.large-text]
+== Intro 1
+
+How long does it take to setup a modern web application?
+
+[NOTE.speaker]
+--
+Java, Gradle, Maven, Webpack, Angular, React, VueJS, Security, Caching viele Konfigurationen, vieles um Fehler zu machen
+
+In der Regel einfach zu lange.
+--
+
+[%notitle]
+[.large-text]
+=== Intro 2
+How long does it take to configure databases, security, api?
+
+[NOTE.speaker]
+--
+Java, Gradle, Maven, Webpack, Angular, React, VueJS, Security, Caching viele Konfigurationen, vieles um Fehler zu machen
+
+In der Regel einfach zu lange.
+--
+
+
+[%notitle]
+[.large-text]
+=== Intro 2
+How long does it take to go to production?
+
+[NOTE.speaker]
+--
+The answer is: too long most of the times. 
+Java, Gradle, Maven, Webpack, Angular, React, VueJS, Security, Caching viele Konfigurationen, vieles um Fehler zu machen
+
+In der Regel einfach zu lange.
+--
+
+[.blue.background]
+[.white.text]
+== What is JHipster?
+
+image::what-is-jhipster-1.png[width=55%]
+
+[.blue.background]
+[.white.text]
+=== What is JHipster?
+
+image::what-is-jhipster-2.png[width=55%]
+
+[.blue.background]
+[.white.text]
+=== What is JHipster?
+
+* Full Stack Application Development Platform
+* 100% Open Source 
+* Best Practive & High Quality Code
+* Community & Knowledge
+
+[.blue.background]
+[.white.text]
+=== JHipster in Numbers
+
+image::jhipster-conf.jpg[canvas,size=contain]
+
+* 15k+ Stars 
+* 35 Core Team Member
+* 536+ Contributors
+* 2 Books
+* 100000+ Installations
+* 2 Conferences
+
+[NOTE.speaker]
+--
+Lot of supporting companies, like google, okta, heroku, microsoft (recently).
+2 Java champions on the team
+companies both giving money, free credit or code (e.g. kubernetes support from google, azure spring cloud)
+--
+
+[.blue.background]
+[.white.text]
+=== Goals
+
+[quote]
+A high-performance and robust Java stack on the server side with Spring Boot
+[quote.fragment]
+A sleek, modern, mobile-first front-end with Angular, React and Bootstrap
+[quote.fragment]
+A powerful workflow to build your application with Yeoman, Webpack and Maven/Gradle
+
+[NOTE.speaker]
+--
+In particular the workflow is very important. We try to ease development and make the pain go away
+when it comes to e.g. configuration of webpack + maven 
+--
+
+[.blue.background]
+[.white.text]
+=== Policies
+
+[quote]
+technologies used by JHipster have their default configuration used as much as possible
+
+[quote.fragment]
+only add options when there is sufficient added-value in the generated code
+
+[quote.fragment]
+for the Java code, follow the default Intellij IDEA coding style
+
+[quote.fragment]
+use strict versions for third-party libraries
+
+[NOTE.speaker]
+--
+For example, we use JPA, Spring, Angular and React the “usual way”, without some heavy configuration options and with their usual naming and coding conventions. We do this as:
+
+Each technology usually has a very good reason to have those defaults
+It’s much easier to understand how JHipster works if we don’t re-configure everything
+
+We might only change a default configuration if it produces some issue with the other technologies used by JHipster. For example, to have Spring Security and Angular working together, we had to change Spring Security’s default configuration.
+--
+
+[.blue.background]
+[.white.text]
+=== Formatting ...
+
+[.fragment]
+image:prettier.png[]
+[.fragment]
+* https://github.com/jhipster/prettier-java
+
+[NOTE.speaker]
+--
+Speaking about formatting...
+Wie ist das in der JS welt? macht man sich da noch Gedanken uber formatting?
+
+Well eher nicht, dank prettier. Bald auch in einem Java Projekt bei euch um die Ecke...
+
+Not yet final, but already useable, but of course opionated, but thats what prettier is doing
+--> No discussion about formatting anymore
+--
+
+[.light-blue.background]
+[.white.text]
+== Options
+
+[%notitle]
+[.light-blue.background]
+[.white.text]
+=== Server Side Options
+
+[.stretch]
+image::server-side.png[]
+
+[%notitle]
+[.light-blue.background]
+[.white.text]
+=== Client Side Options
+
+[.stretch]
+image::client-side.png[]
+
+[%notitle]
+[.light-blue.background]
+[.white.text]
+=== Deployment & CI/CD
+
+[.stretch]
+image::deployment-ci-cd.png[]
+
+[%notitle]
+[.white.text]
+== Live Demo
+
+image::https://media.giphy.com/media/102h4wsmCG2s12/giphy.gif[canvas,size=contain]
+
+Let's Code
+
+=== Gettin' Started
+
+----
+//Install node, java and git (optional)
+npm install -g generator-jhipster
+npm install -g generator-jhipster-vuejs
+
+jhipster --blueprints vuejs
+----
+
+[NOTE.speaker]
+--
+we recommend adoptopenjdk 11 and node lts version
+Latest version 6.6.0 (Gradle 6, Azure Spring Cloud, Swagger UI3)
+--
+
+=== Demo
+
+* Generate a basic library application
+* Short Walkthrough
+* Generare CRUD capabilities
+* Small adotoptions to the code
+* Build with Gitlab CI
+* Deploy to Heroku
+
+https://www.youtube.com/watch?v=uQqlO3IGpTU
+
+[%notitle]
+=== JDL
+
+[.stretch]
+image::jhipster-jdl.png[]
+
+=== Side-by-Side Approach
+
+[source,java]
+----
+@SuppressWarnings("unused")
+@Repository
+public interface BorrowRepository extends JpaRepository<Borrow, Long> {
+
+}
+
+@SuppressWarnings("unused")
+@Repository
+public interface BorrowRepositoryCustom extends BorrowRepository {
+	
+}
+----
+
+[NOTE.speaker]
+--
+While it is generating, most people are interested in how to have custom code and
+business relevant code while keeping up2date with jhipster
+This helps to keep custom and generated code totally separated. Similar approach possible with angular (thanks to typescript)
+--
+
+=== Side-by-Side Approach
+
+
+[source,typescript]
+----
+import BookCopyService from "@/entities/book-copy/book-copy.service";
+
+export default class BookCopyServiceCustom extends BookCopyService {
+	
+}
+----
+
+https://www.slideshare.net/agoncal/custom-and-generated-code-side-by-side-with-jhipster
+
+https://dev.to/antonioortizpola/separating-the-jhipster-layout-from-a-custom-ui-implementation-55i8
+
+=== Going to Production
+
+* Start with less
+* Don't touch the generated code
+* Keep JDL up to date
+* Use same DB in Dev & Prod
+** Integrate Testcontainers
+* Use DTO & Services
+* Most likely you will add custom web api
+
+https://atomfrede.gitlab.io/2019/05/jhipster-with-testcontainers/
+
+https://github.com/intesys/generator-jhipster-testcontainers
+
+[%notitle]
+[.white.text]
+== Give me more
+
+image::please-give-me.jpg[canvas,size=contain]
+
+[NOTE.speaker]
+--
+Who knows start.spring.io? Well, we have something better...
+--
+
+[%notitle]
+[.white.text]
+== Give me more
+
+image::please-give-me.jpg[canvas,size=contain]
+
+[fragment]
+start.jhipster.tech
+
+[NOTE.speaker]
+--
+Who knows start.spring.io? Well, we have something better...
+--
+
+
+== Future Plans
+
+* Polyglot 
+** Kotlin icon:check-square-o[]
+** Node.js icon:battery-3[]
+** .net icon:battery-3[]
+** Micronaut icon:battery-2[]
+** Quarkus icon:battery-1[]
+* Spring Boot 2.2.x icon:check-square-o[]
+* Neo4j Support icon:battery-3[]
+* Modulith, Microfrontends, Fully Reactive
+
+[NOTE.speaker]
+--
+Kotlin quite simple, just replaces java with kotin
+node in beta stage .net in beta stage
+Quarkus/Micronaut in proof of concept phase working together with the micronaut team
+Boot 2.2 is in master, took a little longer due to spring cloud
+Worked together with michael simons from the neo team, waiting SDN/RX release to get a merge request
+Modulith for better structure, Reactive with reactor but I could imagine a vert.x blueprint, 
+Micro Frontents will be great if we get it right as it is hard to make it good
+
+Modulith -> Better package/module structure, instead by layer by domain
+--
+
+[.white.text]
+== More Stuff
+
+image::https://media.giphy.com/media/9AFs1aHPfkq3K/giphy.gif[canvas, size=contains]
+
+* https://jhipster.tech[jhipster.tech]
+* https://github.com/jhipster[github.com/jhipster]
+* https://twitter.com/jhipster[twitter.com/jhipster]
+* https://stackoverflow.com/tags/jhipster/info[stackoverflow.com/tags/jhipster/info]
+* https://gitter.im/jhipster/generator-jhipster[gitter.im/jhipster/generator-jhipster]
+* http://wwww.jhipster-book.com[jhipster-book.com]
+* https://www.packtpub.com/web-development/full-stack-development-with-jhipster-second-edition[www.packtpub.com/web-development/full-stack-development-with-jhipster-second-edition]
+
+[NOTE.speaker]
+--
+Deepus book was just release in a second edition
+Matt Raible will update his minibook for upcoming release
+--
+
+=== Bug Bounties
+
+image::https://media0.giphy.com/media/xTiTnqUxyWbsAXq7Ju/giphy.gif[]
+
+jhipster.tech/bug-bounties
+
+[NOTE.speaker]
+--
+Via open collective, quite a nice budget and helps to be sustainable as we are fully open source. 
+So check the issue list and get some money by doing good
+--
+
+== Questions?
+
+image:https://media.giphy.com/media/iAYupOdWXQy5a4nVGk/giphy.gif[canvas,size=contain]
+
+== Questions? 
+
+== Join Us
+
+image::wescale-logo.png[]
+
+https://wescale.com/de/join-us/[wescale.com/de/join-us]
+
+[NOTE.speaker]
+--
+Come to Paderborn, its nice, much cheaper and we do cool stuff there too
+--
+
+
+
+
