@@ -35,7 +35,7 @@ revealjs {
 
 asciidoctorRevealJs {
   revealjsOptions { 
-    controls = false
+    controls = true
   }
 }
 

@@ -21,7 +21,7 @@
 
 = Getting Hip with JHipster
 
-image::jhipster-logo.png[scaledwidth=100%]
+image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/jhipster-logo.png[scaledwidth=100%]
 
 Code Days 2020
 
@@ -43,8 +43,8 @@ icon:globe[] https://atomfrede.gitlab.io[atomfrede.gitlab.io]
 * JUG Paderborn Organizer
 * Software Developer at wescale 
 
-image:wescale-logo.png[scaledwidth=50%, role=right]
-image:jug-pb.png[scaledwidth=50%]
+image:https://atomfrede.github.io/jhipster-intro-code-days-2020/images/wescale-logo.png[scaledwidth=50%, role=right]
+image:https://atomfrede.github.io/jhipster-intro-code-days-2020/images/jug-pb.png[scaledwidth=50%]
 
 [.white.text]
 === Disclaimer
@@ -54,10 +54,10 @@ I am a Noob
 
 == Greeetings, Hipsters
 
-image:jhipster_family_member_0_head.png[]
-image:jhipster_family_member_2_head.png[]
-image:jhipster_family_member_1_head.png[]
-image:jhipster_family_member_3_head.png[]
+image:https://atomfrede.github.io/jhipster-intro-code-days-2020/images/jhipster_family_member_0_head.png[]
+image:https://atomfrede.github.io/jhipster-intro-code-days-2020/images/jhipster_family_member_2_head.png[]
+image:https://atomfrede.github.io/jhipster-intro-code-days-2020/images/jhipster_family_member_1_head.png[]
+image:https://atomfrede.github.io/jhipster-intro-code-days-2020/images/jhipster_family_member_3_head.png[]
 
 [NOTE.speaker]
 --
@@ -113,13 +113,13 @@ In der Regel einfach zu lange.
 [.white.text]
 == What is JHipster?
 
-image::what-is-jhipster-1.png[width=55%]
+image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/what-is-jhipster-1.png[width=55%]
 
 [.blue.background]
 [.white.text]
 === What is JHipster?
 
-image::what-is-jhipster-2.png[width=55%]
+image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/what-is-jhipster-2.png[width=55%]
 
 [.blue.background]
 [.white.text]
@@ -134,7 +134,7 @@ image::what-is-jhipster-2.png[width=55%]
 [.white.text]
 === JHipster in Numbers
 
-image::jhipster-conf.jpg[canvas,size=contain]
+image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/jhipster-conf.jpg[canvas,size=contain]
 
 * 15k+ Stars 
 * 35 Core Team Member
@@ -198,7 +198,7 @@ We might only change a default configuration if it produces some issue with the 
 === Formatting ...
 
 [.fragment]
-image:prettier.png[]
+image:https://atomfrede.github.io/jhipster-intro-code-days-2020/images/prettier.png[]
 [.fragment]
 * https://github.com/jhipster/prettier-java
 
@@ -223,7 +223,7 @@ Not yet final, but already useable, but of course opionated, but thats what pret
 === Server Side Options
 
 [.stretch]
-image::server-side.png[]
+image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/server-side.png[]
 
 [%notitle]
 [.light-blue.background]
@@ -231,7 +231,7 @@ image::server-side.png[]
 === Client Side Options
 
 [.stretch]
-image::client-side.png[]
+image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/client-side.png[]
 
 [%notitle]
 [.light-blue.background]
@@ -239,7 +239,7 @@ image::client-side.png[]
 === Deployment & CI/CD
 
 [.stretch]
-image::deployment-ci-cd.png[]
+image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/deployment-ci-cd.png[]
 
 [%notitle]
 [.white.text]
@@ -280,7 +280,7 @@ https://www.youtube.com/watch?v=uQqlO3IGpTU
 === JDL
 
 [.stretch]
-image::jhipster-jdl.png[]
+image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/jhipster-jdl.png[]
 
 === Side-by-Side Approach
 
@@ -340,7 +340,7 @@ https://github.com/intesys/generator-jhipster-testcontainers
 [.white.text]
 == Give me more
 
-image::please-give-me.jpg[canvas,size=contain]
+image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/please-give-me.jpg[canvas,size=contain]
 
 [NOTE.speaker]
 --
@@ -351,7 +351,7 @@ Who knows start.spring.io? Well, we have something better...
 [.white.text]
 == Give me more
 
-image::please-give-me.jpg[canvas,size=contain]
+image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/please-give-me.jpg[canvas,size=contain]
 
 [fragment]
 start.jhipster.tech
@@ -426,7 +426,7 @@ image:https://media.giphy.com/media/iAYupOdWXQy5a4nVGk/giphy.gif[canvas,size=con
 
 == Join Us
 
-image::wescale-logo.png[]
+image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/wescale-logo.png[]
 
 https://wescale.com/de/join-us/[wescale.com/de/join-us]
 
