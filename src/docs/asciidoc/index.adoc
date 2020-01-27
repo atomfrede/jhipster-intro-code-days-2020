@@ -21,7 +21,13 @@
 
 = Getting Hip with JHipster
 
-image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/jhipster-logo.png[scaledwidth=100%]
+ifdef::ghpages[]
+image::{ghpagesurl}jhipster-logo.png[scaledwidth=100%]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::jhipster-logo.png[scaledwidth=100%]
+endif::ghpages[]
 
 Code Days 2020
 
@@ -43,8 +49,15 @@ icon:globe[] https://atomfrede.gitlab.io[atomfrede.gitlab.io]
 * JUG Paderborn Organizer
 * Software Developer at wescale 
 
-image:https://atomfrede.github.io/jhipster-intro-code-days-2020/images/wescale-logo.png[scaledwidth=50%, role=right]
-image:https://atomfrede.github.io/jhipster-intro-code-days-2020/images/jug-pb.png[scaledwidth=50%]
+ifdef::ghpages[]
+image:{ghpagesurl}wescale-logo.png[scaledwidth=50%, role=right]
+image:{ghpagesurl}jug-pb.png[scaledwidth=50%]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image:wescale-logo.png[scaledwidth=50%, role=right]
+image:jug-pb.png[scaledwidth=50%]
+endif::ghpages[]
 
 [.white.text]
 === Disclaimer

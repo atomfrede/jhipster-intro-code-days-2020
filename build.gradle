@@ -23,6 +23,8 @@ repositories {
     maven { url 'http://rubygems-proxy.torquebox.org/releases' } 
 }
 
+def ghpages = findProperty('ghpages') ?: null
+
 revealjs {
   version = '2.0.0' 
 
@@ -37,6 +39,8 @@ asciidoctorRevealJs {
   revealjsOptions { 
     controls = true
   }
+  attributes 'ghpages': ghpages,
+    'ghpagesurl': 'https://atomfrede.github.io/jhipster-intro-code-days-2020/images/'
 }
 
 asciidoctor {
@@ -48,4 +52,10 @@ task copyCss(type: Copy) {
     from 'src/docs/asciidoc/css'
     into "$buildDir/docs/asciidocRevealJs/css"
 }
+
+task deploy(type: Copy) {
+  from "$buildDir/docs/asciidocRevealJs"
+  into 'docs'
+}
+
 asciidoctorRevealJs.dependsOn << tasks.copyCss
