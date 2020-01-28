@@ -1,0 +1,7 @@
+= Build
+
+`./gradlew asciidoctorRevealJs`
+
+= Prepare GH Pages
+
+`./gradlew asciidoctorRevealJs deploy -Pghpages=true`

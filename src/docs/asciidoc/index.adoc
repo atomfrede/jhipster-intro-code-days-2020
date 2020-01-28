@@ -67,10 +67,20 @@ I am a Noob
 
 == Greeetings, Hipsters
 
-image:https://atomfrede.github.io/jhipster-intro-code-days-2020/images/jhipster_family_member_0_head.png[]
-image:https://atomfrede.github.io/jhipster-intro-code-days-2020/images/jhipster_family_member_2_head.png[]
-image:https://atomfrede.github.io/jhipster-intro-code-days-2020/images/jhipster_family_member_1_head.png[]
-image:https://atomfrede.github.io/jhipster-intro-code-days-2020/images/jhipster_family_member_3_head.png[]
+ifdef::ghpages[]
+image:{ghpagesurl}jhipster_family_member_0_head.png[]
+image:{ghpagesurl}jhipster_family_member_2_head.png[]
+image:{ghpagesurl}jhipster_family_member_1_head.png[]
+image:{ghpagesurl}jhipster_family_member_3_head.png[]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image:jhipster_family_member_0_head.png[]
+image:jhipster_family_member_2_head.png[]
+image:jhipster_family_member_1_head.png[]
+image:jhipster_family_member_3_head.png[]
+endif::ghpages[]
+
 
 [NOTE.speaker]
 --
@@ -116,6 +126,7 @@ How long does it take to go to production?
 
 [NOTE.speaker]
 --
+Monitoring
 The answer is: too long most of the times. 
 Java, Gradle, Maven, Webpack, Angular, React, VueJS, Security, Caching viele Konfigurationen, vieles um Fehler zu machen
 
@@ -126,13 +137,25 @@ In der Regel einfach zu lange.
 [.white.text]
 == What is JHipster?
 
-image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/what-is-jhipster-1.png[width=55%]
+ifdef::ghpages[]
+image::{ghpagesurl}what-is-jhipster-1.png[width=55%]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::what-is-jhipster-1.png[width=55%]
+endif::ghpages[]
 
 [.blue.background]
 [.white.text]
 === What is JHipster?
 
-image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/what-is-jhipster-2.png[width=55%]
+ifdef::ghpages[]
+image::{ghpagesurl}what-is-jhipster-2.png[width=55%]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::what-is-jhipster-2.png[width=55%]
+endif::ghpages[]
 
 [.blue.background]
 [.white.text]
@@ -147,7 +170,13 @@ image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/what-is-
 [.white.text]
 === JHipster in Numbers
 
-image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/jhipster-conf.jpg[canvas,size=contain]
+ifdef::ghpgages[]
+image::{ghpagesurl}jhipster-conf.jpg[canvas,size=contain]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::jhipster-conf.jpg[canvas,size=contain]
+endif::ghpages[]
 
 * 15k+ Stars 
 * 35 Core Team Member
@@ -211,7 +240,14 @@ We might only change a default configuration if it produces some issue with the 
 === Formatting ...
 
 [.fragment]
-image:https://atomfrede.github.io/jhipster-intro-code-days-2020/images/prettier.png[]
+ifdef::ghpages[]
+image:{ghpagesurl}prettier.png[]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::prettier.png[]
+endif::ghpages[]
+
 [.fragment]
 * https://github.com/jhipster/prettier-java
 
@@ -235,24 +271,45 @@ Not yet final, but already useable, but of course opionated, but thats what pret
 [.white.text]
 === Server Side Options
 
+ifdef::ghpages[]
 [.stretch]
-image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/server-side.png[]
+image::{ghpagesurl}server-side.png[]
+endif::ghpages[]
+
+ifndef::ghpages[]
+[.stretch]
+image::server-side.png[]
+endif::ghpages[]
 
 [%notitle]
 [.light-blue.background]
 [.white.text]
 === Client Side Options
 
+ifdef::ghpages[]
 [.stretch]
-image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/client-side.png[]
+image::{ghpagesurl}client-side.png[]
+endif::ghpages[]
+
+ifndef::ghpages[]
+[.stretch]
+image::client-side.png[]
+endif::ghpages[]
 
 [%notitle]
 [.light-blue.background]
 [.white.text]
 === Deployment & CI/CD
 
+ifdef::ghpages[]
 [.stretch]
-image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/deployment-ci-cd.png[]
+image::{ghpagesurl}deployment-ci-cd.png[]
+endif::ghpages[]
+
+ifndef::ghpages[]
+[.stretch]
+image::deployment-ci-cd.png[]
+endif::ghpages[]
 
 [%notitle]
 [.white.text]
@@ -292,8 +349,15 @@ https://www.youtube.com/watch?v=uQqlO3IGpTU
 [%notitle]
 === JDL
 
+ifdef::ghpages[]
 [.stretch]
-image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/jhipster-jdl.png[]
+image::{ghpagesurl}jhipster-jdl.png[]
+endif::ghpages[]
+
+ifndef::ghpages[]
+[.stretch]
+image::{ghpagesurl}jhipster-jdl.png[]
+endif::ghpages[]
 
 === Side-by-Side Approach
 
@@ -353,7 +417,13 @@ https://github.com/intesys/generator-jhipster-testcontainers
 [.white.text]
 == Give me more
 
-image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/please-give-me.jpg[canvas,size=contain]
+ifdef::ghpages[]
+image::{ghpagesurl}please-give-me.jpg[canvas,size=contain]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::please-give-me.jpg[canvas,size=contain]
+endif::ghpages[]
 
 [NOTE.speaker]
 --
@@ -364,7 +434,13 @@ Who knows start.spring.io? Well, we have something better...
 [.white.text]
 == Give me more
 
-image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/please-give-me.jpg[canvas,size=contain]
+ifdef::ghpages[]
+image::{ghpagesurl}please-give-me.jpg[canvas,size=contain]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::please-give-me.jpg[canvas,size=contain]
+endif::ghpages[]
 
 [fragment]
 start.jhipster.tech
@@ -439,7 +515,13 @@ image:https://media.giphy.com/media/iAYupOdWXQy5a4nVGk/giphy.gif[canvas,size=con
 
 == Join Us
 
-image::https://atomfrede.github.io/jhipster-intro-code-days-2020/images/wescale-logo.png[]
+ifdef::ghpages[]
+image::{ghpagesurl}wescale-logo.png[]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::wescale-logo.png[]
+endif::ghpages[]
 
 https://wescale.com/de/join-us/[wescale.com/de/join-us]
 
