@@ -197,11 +197,11 @@ companies both giving money, free credit or code (e.g. kubernetes support from g
 === Goals
 
 [quote]
-A high-performance and robust Java stack on the server side with Spring Boot
+icon:quote-left[2x] A high-performance and robust Java stack on the server side with Spring Boot
 [quote.fragment]
-A sleek, modern, mobile-first front-end with Angular, React and Bootstrap
+icon:quote-left[2x] A sleek, modern, mobile-first front-end with Angular, React and Bootstrap
 [quote.fragment]
-A powerful workflow to build your application with Yeoman, Webpack and Maven/Gradle
+icon:quote-left[2x] A powerful workflow to build your application with Yeoman, Webpack and Maven/Gradle
 
 [NOTE.speaker]
 --
@@ -214,16 +214,16 @@ when it comes to e.g. configuration of webpack + maven
 === Policies
 
 [quote]
-technologies used by JHipster have their default configuration used as much as possible
+icon:quote-left[2x] technologies used by JHipster have their default configuration used as much as possible
 
 [quote.fragment]
-only add options when there is sufficient added-value in the generated code
+icon:quote-left[2x] only add options when there is sufficient added-value in the generated code
 
 [quote.fragment]
-for the Java code, follow the default Intellij IDEA coding style
+icon:quote-left[2x] for the Java code, follow the default Intellij IDEA coding style
 
 [quote.fragment]
-use strict versions for third-party libraries
+icon:quote-left[2x] use strict versions for third-party libraries
 
 [NOTE.speaker]
 --
