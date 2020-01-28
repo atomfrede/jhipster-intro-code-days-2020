@@ -170,7 +170,7 @@ endif::ghpages[]
 [.white.text]
 === JHipster in Numbers
 
-ifdef::ghpgages[]
+ifdef::ghpages[]
 image::{ghpagesurl}jhipster-conf.jpg[canvas,size=contain]
 endif::ghpages[]
 

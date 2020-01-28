@@ -57,7 +57,82 @@ function handleClick(e) {
 The answer is: too long most of the times.
 Java, Gradle, Maven, Webpack, Angular, React, VueJS, Security, Caching viele Konfigurationen, vieles um Fehler zu machen</p></div>
 <div class="paragraph"><p>In der Regel einfach zu lange.</p></div></aside></section></section>
-<section><section id="_what_is_jhipster" class="blue background white text"><h2>What is JHipster?</h2><div class="imageblock" style=""><img src="https://atomfrede.github.io/jhipster-intro-code-days-2020/images/what-is-jhipster-1.png" alt="what is jhipster 1" width="55%"></div></section><section id="_what_is_jhipster_2" class="blue background white text"><h2>What is JHipster?</h2><div class="imageblock" style=""><img src="https://atomfrede.github.io/jhipster-intro-code-days-2020/images/what-is-jhipster-2.png" alt="what is jhipster 2" width="55%"></div></section><section id="_what_is_jhipster_3" class="blue background white text"><h2>What is JHipster?</h2><div class="ulist"><ul><li><p>Full Stack Application Development Platform</p></li><li><p>100% Open Source</p></li><li><p>Best Practive &amp; High Quality Code</p></li><li><p>Community &amp; Knowledge</p></li></ul></div></section><section id="_jhipster_in_numbers" class="blue background white text"><h2>JHipster in Numbers</h2></section></section></div></div><script src="reveal.js/lib/js/head.min.js"></script><script src="reveal.js/js/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
+<section><section id="_what_is_jhipster" class="blue background white text"><h2>What is JHipster?</h2><div class="imageblock" style=""><img src="https://atomfrede.github.io/jhipster-intro-code-days-2020/images/what-is-jhipster-1.png" alt="what is jhipster 1" width="55%"></div></section><section id="_what_is_jhipster_2" class="blue background white text"><h2>What is JHipster?</h2><div class="imageblock" style=""><img src="https://atomfrede.github.io/jhipster-intro-code-days-2020/images/what-is-jhipster-2.png" alt="what is jhipster 2" width="55%"></div></section><section id="_what_is_jhipster_3" class="blue background white text"><h2>What is JHipster?</h2><div class="ulist"><ul><li><p>Full Stack Application Development Platform</p></li><li><p>100% Open Source</p></li><li><p>Best Practive &amp; High Quality Code</p></li><li><p>Community &amp; Knowledge</p></li></ul></div></section><section id="_jhipster_in_numbers" class="blue background white text" data-background-image="https://atomfrede.github.io/jhipster-intro-code-days-2020/images/jhipster-conf.jpg" data-background-size="contain"><h2>JHipster in Numbers</h2>
+<div class="ulist"><ul><li><p>15k+ Stars</p></li><li><p>35 Core Team Member</p></li><li><p>536+ Contributors</p></li><li><p>2 Books</p></li><li><p>100000+ Installations</p></li><li><p>2 Conferences</p></li></ul></div>
+<aside class="notes"><div class="paragraph"><p>Lot of supporting companies, like google, okta, heroku, microsoft (recently).
+2 Java champions on the team
+companies both giving money, free credit or code (e.g. kubernetes support from google, azure spring cloud)</p></div></aside></section><section id="_goals" class="blue background white text"><h2>Goals</h2><div class="quoteblock"><blockquote>A high-performance and robust Java stack on the server side with Spring Boot</blockquote></div>
+<div class="quoteblock fragment"><blockquote>A sleek, modern, mobile-first front-end with Angular, React and Bootstrap</blockquote></div>
+<div class="quoteblock fragment"><blockquote>A powerful workflow to build your application with Yeoman, Webpack and Maven/Gradle</blockquote></div>
+<aside class="notes"><div class="paragraph"><p>In particular the workflow is very important. We try to ease development and make the pain go away
+when it comes to e.g. configuration of webpack + maven</p></div></aside></section><section id="_policies" class="blue background white text"><h2>Policies</h2><div class="quoteblock"><blockquote>technologies used by JHipster have their default configuration used as much as possible</blockquote></div>
+<div class="quoteblock fragment"><blockquote>only add options when there is sufficient added-value in the generated code</blockquote></div>
+<div class="quoteblock fragment"><blockquote>for the Java code, follow the default Intellij IDEA coding style</blockquote></div>
+<div class="quoteblock fragment"><blockquote>use strict versions for third-party libraries</blockquote></div>
+<aside class="notes"><div class="paragraph"><p>For example, we use JPA, Spring, Angular and React the “usual way”, without some heavy configuration options and with their usual naming and coding conventions. We do this as:</p></div>
+<div class="paragraph"><p>Each technology usually has a very good reason to have those defaults
+It’s much easier to understand how JHipster works if we don’t re-configure everything</p></div>
+<div class="paragraph"><p>We might only change a default configuration if it produces some issue with the other technologies used by JHipster. For example, to have Spring Security and Angular working together, we had to change Spring Security’s default configuration.</p></div></aside></section><section id="_formatting" class="blue background white text"><h2>Formatting &#8230;&#8203;</h2><div class="paragraph fragment"><p><span class="image"><img src="https://atomfrede.github.io/jhipster-intro-code-days-2020/images/prettier.png" alt="prettier"></span></p></div>
+<div class="ulist fragment"><ul><li><p><a href="https://github.com/jhipster/prettier-java" class="bare">https://github.com/jhipster/prettier-java</a></p></li></ul></div>
+<aside class="notes"><div class="paragraph"><p>Speaking about formatting&#8230;&#8203;
+Wie ist das in der JS welt? macht man sich da noch Gedanken uber formatting?</p></div>
+<div class="paragraph"><p>Well eher nicht, dank prettier. Bald auch in einem Java Projekt bei euch um die Ecke&#8230;&#8203;</p></div>
+<div class="paragraph"><p>Not yet final, but already useable, but of course opionated, but thats what prettier is doing
+-&#8594; No discussion about formatting anymore</p></div></aside></section></section>
+<section><section id="_options" class="light-blue background white text"><h2>Options</h2></section><section id="_server_side_options" class="light-blue background white text"><div class="imageblock stretch" style=""><img src="https://atomfrede.github.io/jhipster-intro-code-days-2020/images/server-side.png" alt="server side" height="100%"></div></section><section id="_client_side_options" class="light-blue background white text"><div class="imageblock stretch" style=""><img src="https://atomfrede.github.io/jhipster-intro-code-days-2020/images/client-side.png" alt="client side" height="100%"></div></section><section id="_deployment_cicd" class="light-blue background white text"><div class="imageblock stretch" style=""><img src="https://atomfrede.github.io/jhipster-intro-code-days-2020/images/deployment-ci-cd.png" alt="deployment ci cd" height="100%"></div></section></section>
+<section><section id="_live_demo" class="white text" data-background-image="https://media.giphy.com/media/102h4wsmCG2s12/giphy.gif" data-background-size="contain"><div class="paragraph"><p>Let&#8217;s Code</p></div></section><section id="_gettin_started"><h2>Gettin' Started</h2><pre class="highlight listingblock"><code data-noescape>//Install node, java and git (optional)
+npm install -g generator-jhipster
+npm install -g generator-jhipster-vuejs
+
+jhipster --blueprints vuejs</code></pre>
+<aside class="notes"><div class="paragraph"><p>we recommend adoptopenjdk 11 and node lts version
+Latest version 6.6.0 (Gradle 6, Azure Spring Cloud, Swagger UI3)</p></div></aside></section><section id="_demo"><h2>Demo</h2><div class="ulist"><ul><li><p>Generate a basic library application</p></li><li><p>Short Walkthrough</p></li><li><p>Generare CRUD capabilities</p></li><li><p>Small adotoptions to the code</p></li><li><p>Build with Gitlab CI</p></li><li><p>Deploy to Heroku</p></li></ul></div>
+<div class="paragraph"><p><a href="https://www.youtube.com/watch?v=uQqlO3IGpTU" class="bare">https://www.youtube.com/watch?v=uQqlO3IGpTU</a></p></div></section><section id="_jdl"><div class="imageblock stretch" style=""><img src="https://atomfrede.github.io/jhipster-intro-code-days-2020/images/jhipster-jdl.png" alt="jhipster jdl" height="100%"></div></section><section id="_side_by_side_approach"><h2>Side-by-Side Approach</h2><pre class="highlight listingblock"><code data-noescape class="java language-java">@SuppressWarnings("unused")
+@Repository
+public interface BorrowRepository extends JpaRepository&lt;Borrow, Long&gt; {
+
+}
+
+@SuppressWarnings("unused")
+@Repository
+public interface BorrowRepositoryCustom extends BorrowRepository {
+
+}</code></pre>
+<aside class="notes"><div class="paragraph"><p>While it is generating, most people are interested in how to have custom code and
+business relevant code while keeping up2date with jhipster
+This helps to keep custom and generated code totally separated. Similar approach possible with angular (thanks to typescript)</p></div></aside></section><section id="_side_by_side_approach_2"><h2>Side-by-Side Approach</h2><pre class="highlight listingblock"><code data-noescape class="typescript language-typescript">import BookCopyService from "@/entities/book-copy/book-copy.service";
+
+export default class BookCopyServiceCustom extends BookCopyService {
+
+}</code></pre>
+<div class="paragraph"><p><a href="https://www.slideshare.net/agoncal/custom-and-generated-code-side-by-side-with-jhipster" class="bare">https://www.slideshare.net/agoncal/custom-and-generated-code-side-by-side-with-jhipster</a></p></div>
+<div class="paragraph"><p><a href="https://dev.to/antonioortizpola/separating-the-jhipster-layout-from-a-custom-ui-implementation-55i8" class="bare">https://dev.to/antonioortizpola/separating-the-jhipster-layout-from-a-custom-ui-implementation-55i8</a></p></div></section><section id="_going_to_production"><h2>Going to Production</h2><div class="ulist"><ul><li><p>Start with less</p></li><li><p>Don&#8217;t touch the generated code</p></li><li><p>Keep JDL up to date</p></li><li><p>Use same DB in Dev &amp; Prod</p><div class="ulist"><ul><li><p>Integrate Testcontainers</p></li></ul></div></li><li><p>Use DTO &amp; Services</p></li><li><p>Most likely you will add custom web api</p></li></ul></div>
+<div class="paragraph"><p><a href="https://atomfrede.gitlab.io/2019/05/jhipster-with-testcontainers/" class="bare">https://atomfrede.gitlab.io/2019/05/jhipster-with-testcontainers/</a></p></div>
+<div class="paragraph"><p><a href="https://github.com/intesys/generator-jhipster-testcontainers" class="bare">https://github.com/intesys/generator-jhipster-testcontainers</a></p></div></section></section>
+<section id="_give_me_more" class="white text" data-background-image="https://atomfrede.github.io/jhipster-intro-code-days-2020/images/please-give-me.jpg" data-background-size="contain">
+<aside class="notes"><div class="paragraph"><p>Who knows start.spring.io? Well, we have something better&#8230;&#8203;</p></div></aside></section>
+<section id="_give_me_more_2" class="white text" data-background-image="https://atomfrede.github.io/jhipster-intro-code-days-2020/images/please-give-me.jpg" data-background-size="contain">
+<div class="paragraph"><p>start.jhipster.tech</p></div>
+<aside class="notes"><div class="paragraph"><p>Who knows start.spring.io? Well, we have something better&#8230;&#8203;</p></div></aside></section>
+<section id="_future_plans"><h2>Future Plans</h2><div class="ulist"><ul><li><p>Polyglot</p><div class="ulist"><ul><li><p>Kotlin <span class="icon"><i class="fa fa-check-square-o"></i></span></p></li><li><p>Node.js <span class="icon"><i class="fa fa-battery-3"></i></span></p></li><li><p>.net <span class="icon"><i class="fa fa-battery-3"></i></span></p></li><li><p>Micronaut <span class="icon"><i class="fa fa-battery-2"></i></span></p></li><li><p>Quarkus <span class="icon"><i class="fa fa-battery-1"></i></span></p></li></ul></div></li><li><p>Spring Boot 2.2.x <span class="icon"><i class="fa fa-check-square-o"></i></span></p></li><li><p>Neo4j Support <span class="icon"><i class="fa fa-battery-3"></i></span></p></li><li><p>Modulith, Microfrontends, Fully Reactive</p></li></ul></div>
+<aside class="notes"><div class="paragraph"><p>Kotlin quite simple, just replaces java with kotin
+node in beta stage .net in beta stage
+Quarkus/Micronaut in proof of concept phase working together with the micronaut team
+Boot 2.2 is in master, took a little longer due to spring cloud
+Worked together with michael simons from the neo team, waiting SDN/RX release to get a merge request
+Modulith for better structure, Reactive with reactor but I could imagine a vert.x blueprint,
+Micro Frontents will be great if we get it right as it is hard to make it good</p></div>
+<div class="paragraph"><p>Modulith &#8594; Better package/module structure, instead by layer by domain</p></div></aside></section>
+<section><section id="_more_stuff" class="white text" data-background-image="https://media.giphy.com/media/9AFs1aHPfkq3K/giphy.gif" data-background-size="contains"><h2>More Stuff</h2><div class="ulist"><ul><li><p><a href="https://jhipster.tech">jhipster.tech</a></p></li><li><p><a href="https://github.com/jhipster">github.com/jhipster</a></p></li><li><p><a href="https://twitter.com/jhipster">twitter.com/jhipster</a></p></li><li><p><a href="https://stackoverflow.com/tags/jhipster/info">stackoverflow.com/tags/jhipster/info</a></p></li><li><p><a href="https://gitter.im/jhipster/generator-jhipster">gitter.im/jhipster/generator-jhipster</a></p></li><li><p><a href="http://wwww.jhipster-book.com">jhipster-book.com</a></p></li><li><p><a href="https://www.packtpub.com/web-development/full-stack-development-with-jhipster-second-edition">www.packtpub.com/web-development/full-stack-development-with-jhipster-second-edition</a></p></li></ul></div><aside class="notes"><div class="paragraph"><p>Deepus book was just release in a second edition
+Matt Raible will update his minibook for upcoming release</p></div></aside></section><section id="_bug_bounties"><h2>Bug Bounties</h2><div class="imageblock" style=""><img src="https://media0.giphy.com/media/xTiTnqUxyWbsAXq7Ju/giphy.gif" alt="giphy"></div>
+<div class="paragraph"><p>jhipster.tech/bug-bounties</p></div>
+<aside class="notes"><div class="paragraph"><p>Via open collective, quite a nice budget and helps to be sustainable as we are fully open source.
+So check the issue list and get some money by doing good</p></div></aside></section></section>
+<section id="_questions"><h2>Questions?</h2><div class="paragraph"><p><span class="image"><img src="https://media.giphy.com/media/iAYupOdWXQy5a4nVGk/giphy.gif" alt="canvas"></span></p></div></section>
+<section id="_questions_2"><h2>Questions?</h2></section>
+<section id="_join_us"><h2>Join Us</h2><div class="imageblock" style=""><img src="https://atomfrede.github.io/jhipster-intro-code-days-2020/images/wescale-logo.png" alt="wescale logo"></div>
+<div class="paragraph"><p><a href="https://wescale.com/de/join-us/">wescale.com/de/join-us</a></p></div>
+<aside class="notes"><div class="paragraph"><p>Come to Paderborn, its nice, much cheaper and we do cool stuff there too</p></div></aside></section></div></div><script src="reveal.js/lib/js/head.min.js"></script><script src="reveal.js/js/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
   if (slide.getAttribute('data-background-color')) return;
   // user needs to explicitly say he wants CSS color to override otherwise we might break custom css or theme (#226)
   if (!(slide.classList.contains('canvas') || slide.classList.contains('background'))) return;
