@@ -511,8 +511,6 @@ So check the issue list and get some money by doing good
 
 image:https://media.giphy.com/media/iAYupOdWXQy5a4nVGk/giphy.gif[canvas,size=contain]
 
-== Questions? 
-
 == Join Us
 
 ifdef::ghpages[]
