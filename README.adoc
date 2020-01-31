@@ -5,3 +5,7 @@
 = Prepare GH Pages
 
 `./gradlew asciidoctorRevealJs deploy -Pghpages=true`
+
+= Export PDF
+
+Add `?print-pdf` to the url/html file and use browsers print capabilties to print a pdf.
