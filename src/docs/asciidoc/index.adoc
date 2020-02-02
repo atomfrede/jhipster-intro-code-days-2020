@@ -50,7 +50,7 @@ icon:globe[] https://atomfrede.gitlab.io[atomfrede.gitlab.io]
 * Software Developer at https://www.wescale.com/de/[wescale] in Paderborn 
 
 ifdef::ghpages[]
-image:{ghpagesurl}wescale-jug.png[]
+image:{ghpagesurl}wescale-jug.png[width=25%]
 endif::ghpages[]
 
 ifndef::ghpages[]
