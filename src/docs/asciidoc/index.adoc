@@ -5,7 +5,7 @@
 :revnumber: {project-version}
 :example-caption!:
 :source-highlighter: highlightjs
-:revealjs_width: "90%"
+:revealjs_width: "75%"
 :imagesdir: {docdir}/src/docs/asciidoc/images
 :sourcedir: {docdir}/src/main/java
 :customcss: css/custom.css
@@ -22,11 +22,11 @@
 = Getting Hip with JHipster
 
 ifdef::ghpages[]
-image::{ghpagesurl}jhipster-logo.png[scaledwidth=100%]
+image::{ghpagesurl}jhipster-logo.png[width=90%]
 endif::ghpages[]
 
 ifndef::ghpages[]
-image::jhipster-logo.png[scaledwidth=100%]
+image::jhipster-logo.png[width=90%]
 endif::ghpages[]
 
 Code Days 2020
@@ -44,41 +44,40 @@ icon:globe[] https://atomfrede.gitlab.io[atomfrede.gitlab.io]
 
 === About me
 
-* JHipster Core Team Member since 2015
-* Gradle Stream Lead, Vue Maintainer
-* JUG Paderborn Organizer
-* Software Developer at wescale 
+* https://www.jhipster.tech/team[JHipster Core Team] Member since 2015
+* https://www.jhipster.tech/team/#jhipster-streams[Gradle Stream Lead], Vue Maintainer
+* https://jug-pb.gitlab.io/[JUG Paderborn] Organizer
+* Software Developer at https://www.wescale.com/de/[wescale] in Paderborn 
 
 ifdef::ghpages[]
-image:{ghpagesurl}wescale-logo.png[scaledwidth=50%, role=right]
-image:{ghpagesurl}jug-pb.png[scaledwidth=50%]
+image:{ghpagesurl}wescale-jug.png[]
 endif::ghpages[]
 
 ifndef::ghpages[]
-image:wescale-logo.png[scaledwidth=50%, role=right]
-image:jug-pb.png[scaledwidth=50%]
+image:wescale-jug.png[width=25%]
 endif::ghpages[]
 
 [.white.text]
 === Disclaimer
 
-image::https://media.giphy.com/media/WyrdDeIxGOlQA/source.gif[canvas,size=contain]
+ifdef::ghpages[]
+image::{ghpagesurl}noob.gif[canvas,size=contain]
 I am a Noob
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::noob.gif[canvas,size=contain]
+I am a Noob
+endif::ghpages[]
 
 == Greeetings, Hipsters
 
 ifdef::ghpages[]
-image:{ghpagesurl}jhipster_family_member_0_head.png[]
-image:{ghpagesurl}jhipster_family_member_2_head.png[]
-image:{ghpagesurl}jhipster_family_member_1_head.png[]
-image:{ghpagesurl}jhipster_family_member_3_head.png[]
+image:{ghpagesurl}hipsters.png[width=50%]
 endif::ghpages[]
 
 ifndef::ghpages[]
-image:jhipster_family_member_0_head.png[]
-image:jhipster_family_member_2_head.png[]
-image:jhipster_family_member_1_head.png[]
-image:jhipster_family_member_3_head.png[]
+image:hipsters.png[width=50%]
 endif::ghpages[]
 
 
@@ -163,8 +162,15 @@ endif::ghpages[]
 
 * Full Stack Application Development Platform
 * 100% Open Source 
-* Best Practive & High Quality Code
+* Best Practice & High Quality Code
 * Community & Knowledge
+
+[NOTE.speaker]
+--
+All is open source at github our mailing list
+fun fact last week a collegue was looking for something spring boot related and ended up at our documentation
+with exactly what he wanted to know 
+--
 
 [.blue.background]
 [.white.text]
@@ -220,7 +226,7 @@ icon:quote-left[2x] technologies used by JHipster have their default configurati
 icon:quote-left[2x] only add options when there is sufficient added-value in the generated code
 
 [quote.fragment]
-icon:quote-left[2x] for the Java code, follow the default Intellij IDEA coding style
+icon:quote-left[2x] for the Java code, follow the default Intellij IDEA coding style*
 
 [quote.fragment]
 icon:quote-left[2x] use strict versions for third-party libraries
@@ -340,11 +346,10 @@ Latest version 6.6.0 (Gradle 6, Azure Spring Cloud, Swagger UI3)
 * Generate a basic library application
 * Short Walkthrough
 * Generare CRUD capabilities
-* Small adotoptions to the code
-* Build with Gitlab CI
-* Deploy to Heroku
+* Small changes to the code
+* Build with Gitlab CI, deploy to Heroku
 
-https://www.youtube.com/watch?v=uQqlO3IGpTU
+https://www.youtube.com/watch?v=uQqlO3IGpTU[Learn JHipster in ~15 minutes with Matt Raible]
 
 [%notitle]
 === JDL
@@ -395,9 +400,17 @@ export default class BookCopyServiceCustom extends BookCopyService {
 }
 ----
 
-https://www.slideshare.net/agoncal/custom-and-generated-code-side-by-side-with-jhipster
+https://www.slideshare.net/agoncal/custom-and-generated-code-side-by-side-with-jhipster[Custom and Generated Code Side by Side with JHipster] by https://twitter.com/agoncal[Antonio Goncalves]
 
-https://dev.to/antonioortizpola/separating-the-jhipster-layout-from-a-custom-ui-implementation-55i8
+https://dev.to/antonioortizpola/separating-the-jhipster-layout-from-a-custom-ui-implementation-55i8[Separating the JHipster layout from a custom UI implementation]
+
+[NOTE.speaker]
+--
+Antonios Slides from first jhipster conf. The Devoxx Team and him has changed the whole devoxx conference 
+backend to jhipster based microservices and side by side approach in general with angular
+
+Blog series about how to have a custom ui without interfering with the generated code too much
+--
 
 === Going to Production
 
@@ -405,13 +418,9 @@ https://dev.to/antonioortizpola/separating-the-jhipster-layout-from-a-custom-ui-
 * Don't touch the generated code
 * Keep JDL up to date
 * Use same DB in Dev & Prod
-** Integrate Testcontainers
+** https://atomfrede.gitlab.io/2019/05/jhipster-with-testcontainers/[Integrate Testcontainers]
 * Use DTO & Services
 * Most likely you will add custom web api
-
-https://atomfrede.gitlab.io/2019/05/jhipster-with-testcontainers/
-
-https://github.com/intesys/generator-jhipster-testcontainers
 
 [%notitle]
 [.white.text]
@@ -455,10 +464,8 @@ Who knows start.spring.io? Well, we have something better...
 
 * Polyglot 
 ** Kotlin icon:check-square-o[]
-** Node.js icon:battery-3[]
-** .net icon:battery-3[]
-** Micronaut icon:battery-2[]
-** Quarkus icon:battery-1[]
+** Node.js, .net icon:battery-3[]
+** Micronaut, Quarkus icon:battery-2[]
 * Spring Boot 2.2.x icon:check-square-o[]
 * Neo4j Support icon:battery-3[]
 * Modulith, Microfrontends, Fully Reactive
@@ -477,9 +484,15 @@ Modulith -> Better package/module structure, instead by layer by domain
 --
 
 [.white.text]
-== More Stuff
+== More
 
-image::https://media.giphy.com/media/9AFs1aHPfkq3K/giphy.gif[canvas, size=contains]
+ifdef::ghpages[]
+image::{ghpagesurl}attention.gif[canvas,size=contain]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::attention.gif[canvas,size=contain]
+endif::ghpages[]
 
 * https://jhipster.tech[jhipster.tech]
 * https://github.com/jhipster[github.com/jhipster]
@@ -497,9 +510,15 @@ Matt Raible will update his minibook for upcoming release
 
 === Bug Bounties
 
-image::https://media0.giphy.com/media/xTiTnqUxyWbsAXq7Ju/giphy.gif[]
+ifdef::ghpages[]
+image::{ghpagesurl}bounties.webp[width=25%]
+https://jhipster.tech/bug-bounties[jhipster.tech/bug-bounties]
+endif::ghpages[]
 
-jhipster.tech/bug-bounties
+ifndef::ghpages[]
+image::bounties.webp[width=25%]
+https://jhipster.tech/bug-bounties[jhipster.tech/bug-bounties]
+endif::ghpages[]
 
 [NOTE.speaker]
 --
@@ -509,7 +528,13 @@ So check the issue list and get some money by doing good
 
 == Questions?
 
-image:https://media.giphy.com/media/iAYupOdWXQy5a4nVGk/giphy.gif[canvas,size=contain]
+ifdef::ghpages[]
+image::{ghpagesurl}questions.webp[]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::questions.webp[]
+endif::ghpages[]
 
 == Join Us
 
