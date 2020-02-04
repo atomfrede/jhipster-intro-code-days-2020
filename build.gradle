@@ -53,9 +53,15 @@ task copyCss(type: Copy) {
     into "$buildDir/docs/asciidocRevealJs/css"
 }
 
+task copyFonts(type: Copy) {
+    from 'src/docs/asciidoc/fonts'
+    into "$buildDir/docs/asciidocRevealJs/fonts"
+}
+
 task deploy(type: Copy) {
   from "$buildDir/docs/asciidocRevealJs"
   into 'docs'
 }
 
 asciidoctorRevealJs.dependsOn << tasks.copyCss
+asciidoctorRevealJs.dependsOn << tasks.copyFonts

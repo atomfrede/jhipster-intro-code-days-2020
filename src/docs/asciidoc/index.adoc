@@ -15,7 +15,8 @@
 :revealjs_controls: true
 :source-highlighter: highlightjs
 :highlightjs-theme: css/atom-one-light.css
-:iconfont-cdn: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+// :iconfont-cdn: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+:iconfont-cdn: css/font-awesome.min.css
 
 :linkattrs:
 
@@ -278,13 +279,11 @@ Not yet final, but already useable, but of course opionated, but thats what pret
 === Server Side Options
 
 ifdef::ghpages[]
-[.stretch]
-image::{ghpagesurl}server-side.png[]
+image::{ghpagesurl}server-side.png[width=40%]
 endif::ghpages[]
 
 ifndef::ghpages[]
-[.stretch]
-image::server-side.png[]
+image::server-side.png[width=40%]
 endif::ghpages[]
 
 [%notitle]
@@ -293,12 +292,10 @@ endif::ghpages[]
 === Client Side Options
 
 ifdef::ghpages[]
-[.stretch]
 image::{ghpagesurl}client-side.png[]
 endif::ghpages[]
 
 ifndef::ghpages[]
-[.stretch]
 image::client-side.png[]
 endif::ghpages[]
 
@@ -308,12 +305,10 @@ endif::ghpages[]
 === Deployment & CI/CD
 
 ifdef::ghpages[]
-[.stretch]
 image::{ghpagesurl}deployment-ci-cd.png[]
 endif::ghpages[]
 
 ifndef::ghpages[]
-[.stretch]
 image::deployment-ci-cd.png[]
 endif::ghpages[]
 
@@ -321,9 +316,17 @@ endif::ghpages[]
 [.white.text]
 == Live Demo
 
-image::https://media.giphy.com/media/102h4wsmCG2s12/giphy.gif[canvas,size=contain]
+ifdef::ghpages[]
+image::{ghpagesurl}code.webp[canvas,size=contain]
 
 Let's Code
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::code.webp[canvas,size=contain]
+
+Let's Code
+endif::ghpages[]
 
 === Gettin' Started
 
@@ -361,7 +364,7 @@ endif::ghpages[]
 
 ifndef::ghpages[]
 [.stretch]
-image::{ghpagesurl}jhipster-jdl.png[]
+image::jhipster-jdl.png[]
 endif::ghpages[]
 
 === Side-by-Side Approach
@@ -551,6 +554,24 @@ https://wescale.com/de/join-us/[wescale.com/de/join-us]
 [NOTE.speaker]
 --
 Come to Paderborn, its nice, much cheaper and we do cool stuff there too
+--
+
+== Use the force Luke
+
+ifdef::ghpages[]
+image::{ghpagesurl}rate.png[width=25%]
+endif::ghpages[]
+
+ifndef::ghpages[]
+image::rate.png[width=25%]
+endif::ghpages[]
+
+https://www.sigs-datacom.de/konferenzen/it-eventapp.html
+
+[NOTE.speaker]
+--
+Don't forget to rate the talk or come over, I will be here for a little while
+and get some stickers
 --
 
 
