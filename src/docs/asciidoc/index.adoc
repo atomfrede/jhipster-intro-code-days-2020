@@ -348,7 +348,7 @@ Latest version 6.6.0 (Gradle 6, Azure Spring Cloud, Swagger UI3)
 
 * Generate a basic library application
 * Short Walkthrough
-* Generare CRUD capabilities
+* Generate CRUD capabilities
 * Small changes to the code
 * Build with Gitlab CI, deploy to Heroku
 
